@@ -2,9 +2,9 @@
 This repository contains the source code for my personal portfolio website. The purpose of this website is to showcase my skills, projects, and experiences in an interactive and visually appealing manner.
 
 ## Technologies Used
-+ Framer Motion: Used for creating smooth animations and transitions throughout the website, enhancing the user experience.
 + React: The website is built using React, a popular JavaScript library for building user interfaces.
 + Tailwind CSS: Utilized for styling the components and ensuring a responsive design. Autoprefixer and PostCSS are also integrated for enhanced CSS compatibility and performance.
++ Framer Motion: Used for creating smooth animations and transitions throughout the website, enhancing the user experience.
 + TypeScript: Employed for adding static typing to the JavaScript codebase, providing better code quality and developer experience.
 + ESLint: Used for static code analysis to identify and fix problematic patterns or code that doesn't adhere to coding standards.
 + Prettier: Integrated for code formatting, ensuring consistent and readable codebase across the project.
