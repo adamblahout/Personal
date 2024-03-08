@@ -8,8 +8,9 @@ export default function Header() {
       <motion.div
         className="borded fixed left-1/2 top-0 h-16 w-full -translate-x-1/2 rounded-none border-white border-opacity-40 
         bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-sm sm:top-6 sm:h-12 sm:w-[36rem] sm:rounded-full"
-        initial={{ y: -100, x: "-50%", opacity: 0 }}
+        initial={{ y: -200, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
+        transition={{ duration: 0.8 }}
       ></motion.div>
 
       <nav className="fixed left-1/2 top-[0.15rem] flex h-12 -translate-x-1/2 gap-4 py-2 sm:top-9 sm:h-[initial] sm:py-0">
@@ -18,8 +19,9 @@ export default function Header() {
             <motion.li
               className="flex h-3/4 items-center justify-center"
               key={link.name}
-              initial={{ y: -100, opacity: 0 }}
+              initial={{ y: -200, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
             >
               <Link
                 className="flex w-full items-center justify-center px-3 transition hover:text-gray-950"
