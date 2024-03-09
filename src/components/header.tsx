@@ -10,7 +10,7 @@ export default function Header() {
         bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-sm sm:top-6 sm:h-12 sm:w-[36rem] sm:rounded-full"
         initial={{ y: -200, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.6 }}
       ></motion.div>
 
       <nav className="fixed left-1/2 top-[0.15rem] flex h-12 -translate-x-1/2 gap-4 py-2 sm:top-9 sm:h-[initial] sm:py-0">
@@ -21,7 +21,7 @@ export default function Header() {
               key={link.name}
               initial={{ y: -200, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.6 }}
             >
               <Link
                 className="flex w-full items-center justify-center px-3 transition hover:text-gray-950"

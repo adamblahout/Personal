@@ -4,6 +4,7 @@ import CVczech from "/CVczech.pdf";
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { HiDownload } from "react-icons/hi";
+import SectionDevider from "./section-devider";
 
 function Home() {
   return (
@@ -13,7 +14,7 @@ function Home() {
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ type: "tween", duration: 0.8 }}
+            transition={{ type: "tween", duration: 0.6 }}
           >
             <img
               src={ProfileImage}
@@ -28,8 +29,8 @@ function Home() {
             transition={{
               type: "spring",
               stiffness: 125,
-              delay: 0.3,
-              duration: 0.8,
+              delay: 0.2,
+              duration: 0.6,
             }}
           >
             🙌
@@ -40,7 +41,7 @@ function Home() {
             className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.6 }}
           >
             <p className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl">
               <span className="font-bold">Ahoj, jmenuji se Adam.</span> Jsem{" "}
@@ -57,7 +58,7 @@ function Home() {
           className=" flex flex-col gap-2 font-medium sm:flex-row w-full content-center justify-center px-8 sm:px-0"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1, duration: 0.8 }}
+          transition={{ delay: 0.1, duration: 0.6 }}
         >
           <Link
             to="#contact"
@@ -89,6 +90,7 @@ function Home() {
             <BsGithub />
           </a>
         </motion.div>
+        <SectionDevider />
       </div>
     </section>
   );
