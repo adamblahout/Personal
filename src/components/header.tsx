@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { links } from "../lib/data";
-import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -23,12 +22,12 @@ export default function Header() {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.6 }}
             >
-              <Link
+              <a
                 className="flex w-full items-center justify-center px-3 transition hover:text-gray-950"
-                to={link.hash}
+                href={link.hash}
               >
                 {link.name}
-              </Link>
+              </a>
             </motion.li>
           ))}
         </ul>

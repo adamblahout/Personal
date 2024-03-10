@@ -2,9 +2,8 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-// import corpcommentImg from "@/public/corpcomment.png";
-// import rmtdevImg from "@/public/rmtdev.png";
-// import wordanalyticsImg from "@/public/wordanalytics.png";
+import bcappImg from "/bcapp.png";
+import sdtwebImg from "/sdtweb.png";
 
 export const links = [
   {
@@ -62,25 +61,28 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Bakalářská Práce",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    // imageUrl: corpcommentImg,
+      "Bakalářská práce zabývající se Reactem společně s CSS knihovnami Tailwind, Material UI a Bootstrap",
+    tags: [
+      "React",
+      "React Router & Query",
+      "Tailwind",
+      "Material UI",
+      "Bootstrap",
+    ],
+    imageUrl: bcappImg,
+    githubUrl: "https://github.com/adamblahout/bachelor-react-css-libraries",
+    websiteUrl: "https://blahout-bachelor-wocors.vercel.app/",
   },
   {
-    title: "rmtDev",
+    title: "Prototyp Webu SDT",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    // imageUrl: rmtdevImg,
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    // imageUrl: wordanalyticsImg,
+      "Prototyp webu pro servis dopraní techniky. Zprovozněné jenom některé funkcionality",
+    tags: ["React", "React Router & Query", "TypeScript", "Tailwind"],
+    imageUrl: sdtwebImg,
+    githubUrl: "https://github.com/adamblahout/sdt/tree/main/my-project",
+    websiteUrl: "https://sdt-seven.vercel.app/",
   },
 ] as const;
 

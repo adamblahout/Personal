@@ -2,13 +2,15 @@ import { motion } from "framer-motion";
 import ProfileImage from "/profileimage.png";
 import CVczech from "/CVczech.pdf";
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
-import { Link } from "react-router-dom";
 import { HiDownload } from "react-icons/hi";
 import SectionDevider from "./section-devider";
 
 function Home() {
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0 ">
+    <section
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-32"
+      id="home"
+    >
       <div className=" flex flex-col items-center justify-center gap-3">
         <div className="relative">
           <motion.div
@@ -60,13 +62,13 @@ function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1, duration: 0.6 }}
         >
-          <Link
-            to="#contact"
+          <a
+            href="#contact"
             className="group flex items-center justify-center rounded-full border bg-gray-900 px-7 py-3  text-gray-50 outline-none transition  hover:scale-110 focus:scale-110 active:scale-105"
           >
             Contact me here{" "}
             <BsArrowRight className="ml-3 mt-[0.15rem] transition group-hover:translate-x-1 group-hover:scale-105 group-hover:font-bold" />
-          </Link>
+          </a>
           <a
             href={CVczech}
             download
