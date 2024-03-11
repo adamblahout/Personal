@@ -1,12 +1,16 @@
 import { motion } from "framer-motion";
 import SectionDevider from "./section-devider";
 import Sectionheading from "./section-heading";
+import { useSectionInView } from "../lib/hooks";
 
 function About() {
+  const { ref } = useSectionInView("About", 0.7);
+
   return (
     <section
       className="mb-28 max-w-[45rem] text-center sm:mb-40 leading-7 px-8 scroll-m-28"
       id="about"
+      ref={ref}
     >
       <div className="flex flex-col items-center justify-center ">
         <motion.span

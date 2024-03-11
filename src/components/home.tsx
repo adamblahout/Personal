@@ -4,12 +4,16 @@ import CVczech from "/CVczech.pdf";
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import SectionDevider from "./section-devider";
+import { useSectionInView } from "../lib/hooks";
 
 function Home() {
+  const { ref } = useSectionInView("Home", 0.8);
+
   return (
     <section
       className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-32"
       id="home"
+      ref={ref}
     >
       <div className=" flex flex-col items-center justify-center gap-3">
         <div className="relative">
