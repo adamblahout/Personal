@@ -4,7 +4,7 @@ import Sectionheading from "./section-heading";
 import { useSectionInView } from "../lib/hooks";
 
 function About() {
-  const { ref } = useSectionInView("About", 0.7);
+  const { ref } = useSectionInView("About", 0.6);
 
   return (
     <section

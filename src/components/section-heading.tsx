@@ -2,7 +2,7 @@ interface SectionHeadingProps {
   children: React.ReactNode;
 }
 
-function Sectionheading({ children }: SectionHeadingProps) {
+function SectionHeading({ children }: SectionHeadingProps) {
   return (
     <h2 className="font-medium text-3xl capitalize mb-8 text-center">
       {children}
@@ -10,4 +10,4 @@ function Sectionheading({ children }: SectionHeadingProps) {
   );
 }
 
-export default Sectionheading;
+export default SectionHeading;
