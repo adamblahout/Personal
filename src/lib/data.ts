@@ -32,7 +32,7 @@ export const experiencesData = [
     title: "Junior Developer",
     location: "Commerzbank AG",
     description:
-      "I focused on managing internal websites. Here, I encountered technologies such as SharePoint, HTML, CSS, JavaScript, and React",
+      "Na této pozici jsem spravoval interní stránky. Pracoval jsem především s trechnologiemi jako je SharePoint, HTML, CSS, JavaScript a při migraci na Sharepoint Online i s Reactem.",
     icon: React.createElement(CgWorkAlt),
     date: "2023 - 2024",
   },
@@ -40,7 +40,7 @@ export const experiencesData = [
     title: "Student Support",
     location: "Commerzbank AG",
     description:
-      "Student Support, where I learned to communicate effectively with clients in both Czech and English language",
+      "Na pozici Student Support, jsem komunikoval s klienty, druhou úrovní supportu a řešil jejich požadavky na denní bázy.",
     icon: React.createElement(CgWorkAlt),
     date: "2021 - 2022",
   },
@@ -48,7 +48,7 @@ export const experiencesData = [
     title: "Univerzita Karlova",
     location: "Nové Město",
     description:
-      "Odstátnicoval jsem v roce 2024, kde jsem se zaměřil na React v rámci bakalářské práce společně se 3 populárními CSS knihovnami Tailwind, Material UI a Bootstrap",
+      "Odstátnicoval jsem v roce 2024, kde jsem se zaměřil na React v rámci bakalářské práce společně se 3 populárními CSS knihovnami Tailwind, Material UI a Bootstrap.",
     icon: React.createElement(LuGraduationCap),
     date: "2020 - 2024",
   },
