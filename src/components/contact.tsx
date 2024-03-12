@@ -1,6 +1,5 @@
 import { ImMail3 } from "react-icons/im";
 import SectionHeading from "./section-heading";
-import { BsFillTelephoneFill } from "react-icons/bs";
 import { useSectionInView } from "../lib/hooks";
 
 export default function Contact() {
@@ -22,13 +21,6 @@ export default function Contact() {
         >
           <ImMail3 className="mr-4" />
           blahout.adam@seznam.cz
-        </a>
-        <a
-          href="tel:+420739297448"
-          className="flex hover:scale-110 dark:hover:text-white/80 hover:text-black/80 active:scale-105"
-        >
-          <BsFillTelephoneFill className="mr-4" />
-          +420 739 297 448
         </a>
       </section>
     </>
