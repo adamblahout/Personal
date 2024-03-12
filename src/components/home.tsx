@@ -68,7 +68,7 @@ function Home() {
         >
           <a
             href="#contact"
-            className="group flex items-center justify-center rounded-full border bg-gray-900 px-7 py-3  text-gray-50 outline-none transition  hover:scale-110 focus:scale-110 active:scale-105"
+            className="group flex items-center justify-center rounded-full  bg-gray-900 px-7 py-3  text-gray-50 outline-none transition  hover:scale-110 focus:scale-110 active:scale-105"
           >
             Contact me here{" "}
             <BsArrowRight className="ml-3 mt-[0.15rem] transition group-hover:translate-x-1 group-hover:scale-105 group-hover:font-bold" />
@@ -76,7 +76,8 @@ function Home() {
           <a
             href={CVczech}
             download
-            className="group flex items-center justify-center rounded-full border bg-gray-50 px-7 py-3  text-gray-900 outline-none transition  hover:scale-110 focus:scale-110 active:scale-105 cursor-pointer border-black/10"
+            className="group flex items-center justify-center rounded-full border bg-gray-50 px-7 py-3  text-gray-900 outline-none transition  hover:scale-110 focus:scale-110 active:scale-105 cursor-pointer border-black/10
+            dark:bg-white/10 dark:text-white/80"
           >
             Životopis{" "}
             <HiDownload className="ml-3 transition group-active:translate-y-1 group-hover:font-bold" />
@@ -84,14 +85,16 @@ function Home() {
           <a
             href="https://www.linkedin.com/in/adam-blahout-8118842b3/"
             target="_blank"
-            className="flex items-center justify-center rounded-full border bg-gray-50 px-7 py-3 text-2xl border-black/10 text-gray-700 outline-none transition  hover:scale-110 focus:scale-110 active:scale-105 group-hover:text-gray-950 cursor-pointer"
+            className="flex items-center justify-center rounded-full border bg-gray-50 px-7 py-3 text-2xl border-black/10 text-gray-700 outline-none transition  hover:scale-110 focus:scale-110 active:scale-105 group-hover:text-gray-950 cursor-pointer
+            dark:bg-white/10 dark:text-white/80"
           >
             <BsLinkedin />
           </a>
           <a
             href="https://github.com/adamblahout"
             target="_blank"
-            className="flex items-center justify-center rounded-full border border-black/10 bg-gray-50 px-7 py-3 text-2xl text-gray-700 group-hover:text-gray-950 outline-none transition  hover:scale-110 focus:scale-110 active:scale-105 cursor-pointer"
+            className="flex items-center justify-center rounded-full border border-black/10 bg-gray-50 px-7 py-3 text-2xl text-gray-700 group-hover:text-gray-950 outline-none transition  hover:scale-110 focus:scale-110 active:scale-105 cursor-pointer
+            dark:bg-white/10 dark:text-white/80"
           >
             <BsGithub />
           </a>

@@ -8,7 +8,7 @@ function About() {
 
   return (
     <section
-      className="mb-28 max-w-[45rem] text-center sm:mb-40 leading-7 px-8 scroll-m-28"
+      className="mb-28 max-w-[45rem] text-center sm:mb-40 leading-7 px-8 scroll-m-28 flex items-center justify-center"
       id="about"
       ref={ref}
     >
@@ -21,7 +21,7 @@ function About() {
         >
           {" "}
           <Sectionheading>Kdo jsem</Sectionheading>
-          <div className="text-xl">
+          <div className="text-xl dark:text-gray-50">
             <p>
               Vystudoval jsem soukromou střední školu na Proseku se specializací
               na počítačové sítě, což mi poskytlo pevné základy v oblasti

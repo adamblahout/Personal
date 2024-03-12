@@ -20,7 +20,7 @@ export default function Skills() {
             transition={{ delay: index * 0.05 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="bg-white border border-black/10 rounded-xl px-5 py-3"
+            className="bg-white border border-black/10 rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white"
             key={index}
           >
             {skills}
