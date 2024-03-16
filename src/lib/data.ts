@@ -3,6 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
 import bcappImg from "/bcapp.png";
 import sdtwebImg from "/sdtweb.png";
+import VikingSiteImg from "/vikingsite.png";
 
 export const links = [
   {
@@ -90,6 +91,15 @@ export const projectsData = [
     imageUrl: sdtwebImg,
     githubUrl: "https://github.com/adamblahout/sdt/tree/main/my-project",
     websiteUrl: "https://sdt-seven.vercel.app/",
+  },
+  {
+    title: "Vikingské Stránky",
+    description:
+      "Tento projekt představuje zahajovací úlohu, jejímž cílem bylo vytvoření responzivního webového rozhraní na tematicky libovolné téma pomocí čistého HTML a CSS.",
+    tags: ["HTML", "CSS", "javaScript"],
+    imageUrl: VikingSiteImg,
+    githubUrl: "https://github.com/adamblahout/VikingSite",
+    websiteUrl: "https://viking-site.vercel.app/",
   },
 ] as const;
 
