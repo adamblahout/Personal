@@ -5,19 +5,28 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "../lib/data";
+import { experiencesDataEng } from "../lib/data";
+
 import React from "react";
 import { useSectionInView } from "../lib/hooks";
 import { useTheme } from "../context/theme-controller-context";
+import { useTranslation } from "react-i18next";
 
 export default function Experience() {
   //react-vertical-timeline-component + needed to instal (npm i --save-dev @types/react-vertical-timeline-component)
   const { ref } = useSectionInView("Experience", 0.8);
   const { theme } = useTheme();
+  const [t] = useTranslation("global");
+
+  const localStorageLanguage = window.localStorage.getItem("language");
+  const selectedExperiencesData =
+    localStorageLanguage === "cz" ? experiencesData : experiencesDataEng;
+
   return (
     <section id="experience" ref={ref} className="max-w-[60rem] mt-12 sm:mt-0">
-      <SectionHeading>Zkušenosti</SectionHeading>
+      <SectionHeading>{t("heading.experience")}</SectionHeading>
       <VerticalTimeline lineColor="">
-        {experiencesData.map((item, index) => (
+        {selectedExperiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
               contentStyle={{

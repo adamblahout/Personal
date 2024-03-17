@@ -2,8 +2,10 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { projectsData } from "../lib/data";
 import { BsGithub } from "react-icons/bs";
+import { projectsDataEn } from "../lib/data";
 
 type ProjectsProps = (typeof projectsData)[number];
+type EngProjectProps = (typeof projectsDataEn)[number];
 
 export default function Project({
   title,
@@ -12,7 +14,7 @@ export default function Project({
   imageUrl,
   githubUrl,
   websiteUrl,
-}: ProjectsProps) {
+}: ProjectsProps | EngProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({

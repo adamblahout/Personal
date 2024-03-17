@@ -1,15 +1,17 @@
 import { ImMail3 } from "react-icons/im";
 import SectionHeading from "./section-heading";
 import { useSectionInView } from "../lib/hooks";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
   //const { ref } = useSectionInView("Contact", 0.8);
   const { ref } = useSectionInView("Contact", 0.2);
+  const [t] = useTranslation("global");
 
   return (
     <>
       <div className="mt-16" id="contact"></div>
-      <SectionHeading>Kontakt</SectionHeading>
+      <SectionHeading>{t("heading.contact")}</SectionHeading>
       <section
         className="flex flex-col items-start justify-left gap-2 text-lg"
         id="contact"

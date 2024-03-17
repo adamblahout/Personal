@@ -9,6 +9,7 @@ import Footer from "./components/footer";
 import ThemeSwitch from "./components/theme-switch";
 import ThemeControllerProvider from "./context/theme-controller-context";
 import Contact from "./components/contact";
+import LanguageSwitch from "./components/language-switch";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Experience />
             {/*<Contact />*/}
             <ThemeSwitch />
+            <LanguageSwitch />
           </ThemeControllerProvider>
           <Contact />
         </div>

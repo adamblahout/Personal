@@ -5,10 +5,11 @@ import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import SectionDevider from "./section-devider";
 import { useSectionInView } from "../lib/hooks";
+import { useTranslation } from "react-i18next";
 
 function Home() {
   const { ref } = useSectionInView("Home", 0.8);
-
+  const [t] = useTranslation("global");
   return (
     <section
       className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-32"
@@ -49,15 +50,25 @@ function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <p className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl">
-              <span className="font-bold">Ahoj, jmenuji se Adam.</span> Jsem{" "}
-              <span className="font-bold">front-end developer</span> s{" "}
-              <span className="font-bold">1 rokem</span> zkušeností. Mojí
-              zálibou je vývoj{" "}
-              <span className="italic">webových stránek a aplikací</span>.
-              Zaměřuji se především na{" "}
-              <span className="text-blue-600">React</span>.
-            </p>
+            {
+              <p className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl">
+                <span className="font-bold">
+                  {t("home.introduction.introPart1")}
+                </span>{" "}
+                <span className="font-bold">
+                  {t("home.introduction.introPart2")}
+                </span>{" "}
+                <span className="font-bold">
+                  {t("home.introduction.introPart3")}
+                </span>{" "}
+                <span className="italic">
+                  {t("home.introduction.introPart4")}
+                </span>{" "}
+                <span className="text-blue-600">
+                  {t("home.introduction.introPart5")}
+                </span>
+              </p>
+            }
           </motion.h1>
         </div>
         <motion.div
@@ -70,7 +81,7 @@ function Home() {
             href="#contact"
             className="group flex items-center justify-center rounded-full  bg-gray-900 px-7 py-3  text-gray-50 outline-none transition  hover:scale-110 focus:scale-110 active:scale-105"
           >
-            Contact me here{" "}
+            {t("buttons.contact")}{" "}
             <BsArrowRight className="ml-3 mt-[0.15rem] transition group-hover:translate-x-1 group-hover:scale-105 group-hover:font-bold" />
           </a>
           <a
@@ -79,7 +90,7 @@ function Home() {
             className="group flex items-center justify-center rounded-full border bg-gray-50 px-7 py-3  text-gray-900 outline-none transition  hover:scale-110 focus:scale-110 active:scale-105 cursor-pointer border-black/10
             dark:bg-white/10 dark:text-white/80"
           >
-            Životopis{" "}
+            {t("buttons.cv")}{" "}
             <HiDownload className="ml-3 transition group-active:translate-y-1 group-hover:font-bold" />
           </a>
           <a

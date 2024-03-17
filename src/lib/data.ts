@@ -51,7 +51,7 @@ export const experiencesData = [
   },
   {
     title: "Univerzita Karlova",
-    location: "Nové Město",
+    location: "Pedagogická Fakulta",
     description:
       "Odstátnicoval jsem v roce 2024, kde jsem se zaměřil na React v rámci bakalářské práce společně se 3 populárními CSS knihovnami Tailwind, Material UI a Bootstrap.",
     icon: React.createElement(LuGraduationCap),
@@ -62,6 +62,40 @@ export const experiencesData = [
     location: "Praha 9-Prosek",
     description:
       "Odmaturoval jsem na této škole se zaměřením na správu počítačových sítí",
+    icon: React.createElement(LuGraduationCap),
+    date: "2016 - 2020",
+  },
+] as const;
+export const experiencesDataEng = [
+  {
+    title: "Junior Developer",
+    location: "Commerzbank AG",
+    description:
+      "In this position, I managed internal websites. I primarily worked with technologies such as SharePoint, HTML, CSS, JavaScript, and during the migration to SharePoint Online, also with React.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023 - 2024",
+  },
+  {
+    title: "Student Support",
+    location: "Commerzbank AG",
+    description:
+      "In the Student Support position, I communicated with clients and the second level of support, addressing their daily requests.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2021 - 2022",
+  },
+  {
+    title: "Charles University",
+    location: "Faculty of Education",
+    description:
+      "I graduated in 2024, focusing on React as part of my bachelor's thesis alongside 3 popular CSS libraries: Tailwind, Material UI, and Bootstrap.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2020 - 2024",
+  },
+  {
+    title: "High School of Computing Technology",
+    location: "Prague 9-Prosek",
+    description:
+      "I graduated from this school with a focus on computer network administration.",
     icon: React.createElement(LuGraduationCap),
     date: "2016 - 2020",
   },
@@ -96,6 +130,42 @@ export const projectsData = [
     title: "Vikingské Stránky",
     description:
       "Tento projekt představuje zahajovací úlohu, jejímž cílem bylo vytvoření responzivního webového rozhraní na tematicky libovolné téma pomocí čistého HTML a CSS.",
+    tags: ["HTML", "CSS", "javaScript"],
+    imageUrl: VikingSiteImg,
+    githubUrl: "https://github.com/adamblahout/VikingSite",
+    websiteUrl: "https://viking-site.vercel.app/",
+  },
+] as const;
+
+export const projectsDataEn = [
+  {
+    title: "Bachelor Thesis",
+    description:
+      "Bachelor's thesis focusing on React together with CSS libraries Tailwind, Material UI, and Bootstrap.",
+    tags: [
+      "React",
+      "React Router & Query",
+      "Tailwind",
+      "Material UI",
+      "Bootstrap",
+    ],
+    imageUrl: bcappImg,
+    githubUrl: "https://github.com/adamblahout/bachelor-react-css-libraries",
+    websiteUrl: "https://blahout-bachelor-wocors.vercel.app/",
+  },
+  {
+    title: "SDT Website Prototype",
+    description:
+      "Website prototype for a transport technology service. Only some functionalities are implemented.",
+    tags: ["React", "React Router & Query", "TypeScript", "Tailwind"],
+    imageUrl: sdtwebImg,
+    githubUrl: "https://github.com/adamblahout/sdt/tree/main/my-project",
+    websiteUrl: "https://sdt-seven.vercel.app/",
+  },
+  {
+    title: "Viking Website",
+    description:
+      "This project represents an introductory task aimed at creating a responsive web interface on any theme using pure HTML and CSS.",
     tags: ["HTML", "CSS", "javaScript"],
     imageUrl: VikingSiteImg,
     githubUrl: "https://github.com/adamblahout/VikingSite",

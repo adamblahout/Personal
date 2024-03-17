@@ -1,0 +1,29 @@
+{
+  "home": {
+    "introduction": {
+      "introPart1": "Ahoj, jmenuji se Adam.",
+      "introPart2": "Jsem front-end developer",
+      "introPart3": "s 1 rokem zkušeností",
+      "introPart4": "webových stránek a aplikací, zaměřuji se především na",
+      "introPart5": "React"
+    }
+  },
+  "buttons": {
+    "contact": "Kontakt Zde",
+    "cv": "Životopis"
+  },
+  "about": {
+    "whoami": {
+      "section1": "Vystudoval jsem soukromou střední školu na Proseku se specializací na počítačové sítě, což mi poskytlo pevné základy v oblasti informačních technologií. Následně jsem pokračoval ve studiu na Karlově Univerzitě, kde jsem se opět zaměřil na informační technologie. Během svého studia na obou školách jsem měl příležitost pracovat s různými webovými technologiemi, včetně HTML, CSS, JavaScriptu, SQL a PHP.",
+      "section2": "V průběhu svého vysokoškolského studia jsem získal cenné praktické zkušenosti prací ve společnosti CommerzBank. Začínaje pozicí Student Support jsem úspěšně komunikoval s klienty a zajišťoval jejich požadavky. Později jsem měl možnost pracovat jako Junior vývojář, kde jsem se seznámil s dalšími moderními technologiemi, včetně Reactu, React Query / Router, Framer motion, Gitu, Tailwind CSS a Material UI.",
+      "section3": "Mým hlavním zájmem a motivací je neustálé učení se a zdokonalování v oblasti vývoje softwaru a webových technologií. Jsem nadšený z nových výzev a příležitostí, které mi tato oblast nabízí, a rád bych se nadále vzdělával a rozvíjel své dovednosti. S vášní a odhodláním se pustím do dalších projektů a příležitostí, které mi přinesou možnost dalšího růstu a profesního rozvoje."
+    }
+  },
+  "heading": {
+    "whoami": "Kdo Jsem",
+    "projects": "Projekty",
+    "myskills": "Dovednosti",
+    "experience": "Zkušenosti",
+    "contact": "Kontakt"
+  }
+}

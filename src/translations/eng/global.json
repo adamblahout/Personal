@@ -1,0 +1,29 @@
+{
+  "home": {
+    "introduction": {
+      "introPart1": "Hello, my name is Adam.",
+      "introPart2": "I am front-end developer",
+      "introPart3": "with 1 year of experience in",
+      "introPart4": "web development, I especially focus on",
+      "introPart5": "React"
+    }
+  },
+  "buttons": {
+    "contact": "Contact Me Here",
+    "cv": "Curriculum Vitae"
+  },
+  "about": {
+    "whoami": {
+      "section1": "I graduated from a private high school in Prosek with a specialization in computer networks, which provided me with a solid foundation in information technology. Later, I continued my studies at Charles University, where I again focused on information technology. During my studies at both schools, I had the opportunity to work with various web technologies, including HTML, CSS, JavaScript, SQL, and PHP.",
+      "section2": "During my university studies, I gained valuable practical experience working at CommerzBank. Starting as a Student Support, I successfully communicated with clients and fulfilled their requests. Later, I had the opportunity to work as a Junior Developer, where I became familiar with other modern technologies, including React, React Query/Router, Framer Motion, Git, Tailwind CSS, and Material UI.",
+      "section3": "My main interest and motivation are continuous learning and improvement in software development and web technologies. I am enthusiastic about new challenges and opportunities that this field offers me, and I would like to continue educating myself and developing my skills. With passion and determination, I will engage in further projects and opportunities that will bring me the opportunity for further growth and professional development."
+    }
+  },
+  "heading": {
+    "whoami": "About Me",
+    "projects": "Projects",
+    "myskills": "My Skills",
+    "experience": "Experinece",
+    "contact": "Contact"
+  }
+}
