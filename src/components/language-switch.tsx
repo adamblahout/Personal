@@ -22,8 +22,10 @@ export default function LanguageSwitch() {
     const localStorageLanguage = window.localStorage.getItem("language");
     if (localStorageLanguage) {
       setLng(localStorageLanguage);
+    } else {
+      i18n.changeLanguage("cz");
     }
-  }, []);
+  }, [i18n]);
 
   return (
     <button
