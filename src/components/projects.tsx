@@ -9,7 +9,6 @@ import { useTranslation } from "react-i18next";
 
 function Projects() {
   const { ref } = useSectionInView("Projects", 0.8);
-  useTranslation("project");
   const [t] = useTranslation("global");
   const ChooseLanData = () => {
     const localStorageLanguage = window.localStorage.getItem("language");

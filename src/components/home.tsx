@@ -8,8 +8,9 @@ import { useSectionInView } from "../lib/hooks";
 import { useTranslation } from "react-i18next";
 
 function Home() {
-  const { ref } = useSectionInView("Home", 0.8);
+  const { ref } = useSectionInView("Home", 1);
   const [t] = useTranslation("global");
+
   return (
     <section
       className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-32"
