@@ -1,15 +1,17 @@
 import { motion } from "framer-motion";
 import ProfileImage from "/profileimage.png";
-import CVczech from "/CVczech.pdf";
+
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import SectionDevider from "./section-devider";
 import { useSectionInView } from "../lib/hooks";
 import { useTranslation } from "react-i18next";
+import { useLanguage } from "../context/language-context";
 
 function Home() {
   const { ref } = useSectionInView("Home", 1);
   const [t] = useTranslation("global");
+  const { cv } = useLanguage();
 
   return (
     <section
@@ -85,8 +87,9 @@ function Home() {
             {t("buttons.contact")}{" "}
             <BsArrowRight className="ml-3 mt-[0.15rem] transition group-hover:translate-x-1 group-hover:scale-105 group-hover:font-bold" />
           </a>
+
           <a
-            href={CVczech}
+            href={cv}
             download
             className="group flex items-center justify-center rounded-full border bg-gray-50 px-7 py-3  text-gray-900 outline-none transition  hover:scale-110 focus:scale-110 active:scale-105 cursor-pointer border-black/10
             dark:bg-white/10 dark:text-white/80"

@@ -10,6 +10,7 @@ import ThemeSwitch from "./components/theme-switch";
 import ThemeControllerProvider from "./context/theme-controller-context";
 import Contact from "./components/contact";
 import LanguageSwitch from "./components/language-switch";
+import LanguageContextProvider from "./context/language-context";
 
 function App() {
   return (
@@ -17,16 +18,18 @@ function App() {
       <ActiveSectionContextProvider>
         <div className="flex flex-col items-center z-20">
           <ThemeControllerProvider>
-            <Header />
-            {/*<Children />*/}
-            <Home />
-            <About />
-            <Projects />
-            <Skills />
-            <Experience />
-            {/*<Contact />*/}
-            <ThemeSwitch />
-            <LanguageSwitch />
+            <LanguageContextProvider>
+              <Header />
+              {/*<Children />*/}
+              <Home />
+              <About />
+              <Projects />
+              <Skills />
+              <Experience />
+              {/*<Contact />*/}
+              <ThemeSwitch />
+              <LanguageSwitch />
+            </LanguageContextProvider>
           </ThemeControllerProvider>
           <Contact />
         </div>

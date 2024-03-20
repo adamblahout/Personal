@@ -1,30 +1,7 @@
-import { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
+import { useLanguage } from "../context/language-context";
 
 export default function LanguageSwitch() {
-  const [lng, setLng] = useState("cz");
-  const [, i18n] = useTranslation("global");
-
-  function toggleLanguage() {
-    if (lng === "cz") {
-      setLng("eng");
-      window.localStorage.setItem("language", "eng");
-      i18n.changeLanguage("eng");
-    } else {
-      setLng("cz");
-      window.localStorage.setItem("language", "cz");
-      i18n.changeLanguage("cz");
-    }
-  }
-
-  useEffect(() => {
-    const localStorageLanguage = window.localStorage.getItem("language");
-    if (localStorageLanguage) {
-      setLng(localStorageLanguage);
-    } else {
-      i18n.changeLanguage("cz");
-    }
-  }, [i18n]);
+  const { lng, toggleLanguage } = useLanguage();
 
   return (
     <button

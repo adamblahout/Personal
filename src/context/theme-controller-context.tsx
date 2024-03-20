@@ -1,9 +1,11 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { Theme } from "../lib/types";
+
 type ThemeContextType = {
   theme: Theme;
   toggleTheme: () => void;
 };
+
 type ThemeControllerProviderProps = { children: React.ReactNode };
 const ThemeContext = createContext<ThemeContextType | null>(null);
 
