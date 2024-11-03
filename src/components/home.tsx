@@ -29,7 +29,7 @@ function Home() {
             <img
               src={ProfileImage}
               alt="Profile Image"
-              className="w-32 rounded-full border-[0.35rem] border-white object-cover shadow-xl sm:w-44"
+              className="w-32 h-32 rounded-full border-[0.35rem] border-white object-cover shadow-xl sm:w-44 sm:h-44"
             />
           </motion.div>
           <motion.span
